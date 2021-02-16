@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    
+    <!-- responsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
+    
+    <link rel="stylesheet" href="style/carousel.css">
 
     <!-- owl jquery css -->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
@@ -14,7 +19,7 @@
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">POKIFLIX</h2>
+            <img class="logo" src="/img/pokilogo.png" alt="">
             <nav>
                 <a href="#">Início</a>
                 <a href="#">Minha Lista</a>
@@ -31,50 +36,129 @@
                 <h3 class="titulo-filme">BRIDGERTON</h3>
                 <p class="descricao">Oito irmãos inseparáveis buscam amor e felicidade na alta sociedade de Londres.</p>
                 <div class="botoes">
-                    <button role="button" class="botao">
-                        <i class="fas fa-play"></i>
-                        ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao">
-                        <i class="fas fa-info-circle"></i>
-                        MAIS INFORMAÇÕES
-                    </button>
+                    <a href="https://www.youtube.com/watch?v=pyi8QAlHR8k" target="_blank">
+                        <button role="button" class="botao" id="assistir">
+                            <i class="fas fa-play"></i>
+                            Assistir
+                        </button>
+                    </a>
+                    <a href="https://www.themoviedb.org/tv/91239-bridgerton?language=pt-BR" target="_blank">
+                        <button role="button" class="botao" id="informacoes">
+                            <i class="fas fa-info-circle"></i>
+                            Mais informações
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
     </main>
 
+    <div class="slider-frame">
+        <h4>Quarenteners</h4>
+        <div class="btn prev"></div>
+        <div class="btn next"></div>
+        <div class="slider-container">
+            <div class="slide">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w500_and_h282_face/35w8giCVT7ZXc0gAAjx8MRaWL90.jpg" alt="" srcset="">
+            </div>
+            <div class="slide">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w500_and_h282_face/eAZtz2ydxBaHtJw3J42Gdy2DSpc.jpg" alt="" srcset="">
+            </div>
+            <div class="slide">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w500_and_h282_face/3zO060G54cHT1BzY1jntO5fKFOa.jpg" alt="" srcset="">
+            </div>
+            <div class="slide">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w500_and_h282_face/uHdRYS5uKR2upP5G9WUHRBpJeQP.jpg" alt="" srcset="">
+            </div>
+            <div class="slide">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w500_and_h282_face/qJxzjUjCpTPvDHldNnlbRC4OqEh.jpg" alt="" srcset="">
+            </div>
+            <div class="slide">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w500_and_h282_face/tkD8BnuPcWCEtVpScvt8xDo9rZT.jpg" alt="" srcset="">
+            </div>
+            <div class="slide">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w500_and_h282_face/gTSMffRmJRY2NLBDMjAmfUShk0.jpg" alt="" srcset="">
+            </div>
+            <div class="slide">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w500_and_h282_face/6aJMl28iBbhZLxDIj3Vqfaonzv2.jpg" alt="" srcset="">
+            </div>
+            <div class="slide">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w500_and_h282_face/8U0CLE1jm8wzsAUqmawdOqR46FD.jpg" alt="" srcset="">
+            </div>
+            <div class="slide">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w500_and_h282_face/ta5oblpMlEcIPIS2YGcq9XEkWK2.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
     <div class="carousel-filmes">
+        <h4>Um pouco dos filmes</h4>
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/oJagOzBu9Rdd9BrciseCm3U3MCU.jpg" alt="" srcset="">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg" alt="" srcset="">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/ohXr0v9U0TfFu9IXbSDm5zoGV3R.jpg" alt="" srcset="">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/m8eFedsS7vQCZCS8WGp5n1bVD0q.jpg" alt="" srcset="">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/xLxgVxFWvb9hhUyCDDXxRPPnFck.jpg" alt="" srcset="">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/erl801HYIodoIBGZeFk0GTwCUBh.jpg" alt="" srcset="">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/dmnY0Zs8uMSHkMiol7M3xOlvvkK.jpg" alt="" srcset="">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/vaiUIx05KbMr7szzrnAuw9kyx8Q.jpg" alt="" srcset="">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg" alt="" srcset="">
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini10.jpg" alt="" srcset="">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/4av3oWqgZ8QOl96xitvEovcu8jm.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-filmes">
+        <h4>Um pouco das animações</h4>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/vfJFJPepRKapMd5G2ro7klIRysq.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/bNBXskBHOwPSW21o7iT3N8QVg9L.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/ybQSBSrINtjWsJQ6Ih8sva8HlEZ.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/tML79svZV19q9z2CsvjyJr2Y9xZ.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/jHo6W1gkDbcFx5gAS8PuJnqXHge.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/xoMN4exFcNZNCpTLCzv3IP6xULV.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/nC3YWqBJJ6XdUnviCUFWbyOYdn7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/62SAZfLfzhxJWUFJvfIPMw6QUpE.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/oo5gvGDIiPwbXc3R0snZIuOc517.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="https://www.themoviedb.org/t/p/w220_and_h330_face/r3OsqCs873HjQiXHTZ2rLZyBBxC.jpg" alt="" srcset="">
             </div>
         </div>
     </div>
@@ -83,6 +167,7 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js""></script>
     <script src="js/owl/setup.js"></script>
+    <script src="js/carousel.js"></script>
     
 </body>
 </html>
